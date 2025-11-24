@@ -1,0 +1,137 @@
+/* Importação de fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+
+header {
+    background: #303F9F;
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+nav a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.pesquisa {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.pesquisa input {
+    padding: 12px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 16px;
+}
+
+.pesquisa button {
+    padding: 12px 25px;
+    background: #303F9F;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.pesquisa button:hover {
+    background: #1A237E;
+}
+
+
+.livros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.livro img {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.livro img:hover {
+    transform: scale(1.07);
+}
+
+.livro {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.categorias {
+    text-align: center;
+    padding: 30px;
+}
+
+.botao {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background: #3949AB;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.botao:hover {
+    background: #1A237E;
+}
+
+
+footer {
+    margin-top: 40px;
+    background: #303F9F;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+    .livro img {
+        width: 140px;
+        height: 200px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .pesquisa input {
+        width: 80%;
+    }
+}

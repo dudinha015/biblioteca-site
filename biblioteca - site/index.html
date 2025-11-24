@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Biblioteca Online</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="romance.html">Romance</a>
+        <a href="acao.html">Ação</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+</header>
+
+<section class="pesquisa">
+    <h2>Pesquisar Livro</h2>
+    <input type="text" id="campoPesquisa" placeholder="Digite o nome do livro...">
+    <button onclick="pesquisarLivro()">Pesquisar</button>
+    <p id="resultadoPesquisa"></p>
+</section>
+
+<section class="mais-emprestados">
+    <h2>Livros Mais Emprestados</h2>
+
+    <div class="livros-container">
+
+        <div class="livro">
+            <img src="https://m.media-amazon.com/images/I/61x1ZHomWUL._AC_UF1000,1000_QL80_.jpg" alt="Capa do livro Dom Casmurro">
+            <p>Dom Casmurro</p>
+        </div>
+
+        <div class="livro">
+            <img src="https://harpercollins.com.br/cdn/shop/files/9786555114249.jpg?v=1754636754&width=350" alt="Capa de O Senhor dos Anéis">
+            <p>O Senhor dos Anéis</p>
+        </div>
+
+        <div class="livro">
+            <img src="https://m.media-amazon.com/images/I/71wANojhEKL._AC_UF1000,1000_QL80_.jpg" alt="Capa do livro 1984">
+            <p>1984</p>
+        </div>
+
+        <div class="livro">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/4/47/O-pequeno-pr%C3%ADncipe.jpg" alt="Capa do livro O Pequeno Príncipe">
+            <p>O Pequeno Príncipe</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="categorias">
+    <h2>Categorias</h2>
+    <a class="botao" href="romance.html">Romance</a>
+    <a class="botao" href="acao.html">Ação</a>
+    <a class="botao" href="policial.html">Policial</a>
+    <a class="botao" href="dramas.html">Dramático</a>
+</section>
+
+<footer>
+    <p>Endereço: Rua das Letras, 123 - Biblioteca Central</p>
+    <p>Telefone: (11) 99999-9999</p>
+    <p>© 2025 Biblioteca Online</p>
+</footer>
+
+</body>
+</html>
